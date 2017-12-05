@@ -74,8 +74,8 @@ RSpec.describe RomeConverter do
       expect(RomeConverter.new.to_dec('MCMLXXXIVM').to_i).to eq 1984      
     end
 
-    it 'MMMCMXCIX to equal 3999' do
-      expect(RomeConverter.new.to_dec('MMMCMXCIX').to_i).to eq 3999
+    it 'MMMMCMXCIX to equal 4999' do
+      expect(RomeConverter.new.to_dec('MMMMCMXCIX').to_i).to eq 4999
     end
   end
 
@@ -184,8 +184,8 @@ RSpec.describe RomeConverter do
       expect(RomeConverter.new.to_rome 1984).to eq 'MCMLXXXIV'
     end
 
-    it '3999 to equal MMMCMXCIX' do
-      expect(RomeConverter.new.to_rome 3999).to eq 'MMMCMXCIX'
+    it '4999 to equal MMMMCMXCIX' do
+      expect(RomeConverter.new.to_rome 4999).to eq 'MMMMCMXCIX'
     end
   end
 end
